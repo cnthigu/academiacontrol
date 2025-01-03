@@ -1,0 +1,26 @@
+C:\Users\higu\source\repos\Aula 99\Aula 99\bin\Debug\net8.0-windows\Aula 99.exe
+C:\Users\higu\source\repos\Aula 99\Aula 99\bin\Debug\net8.0-windows\Aula 99.deps.json
+C:\Users\higu\source\repos\Aula 99\Aula 99\bin\Debug\net8.0-windows\Aula 99.runtimeconfig.json
+C:\Users\higu\source\repos\Aula 99\Aula 99\bin\Debug\net8.0-windows\Aula 99.dll
+C:\Users\higu\source\repos\Aula 99\Aula 99\bin\Debug\net8.0-windows\Aula 99.pdb
+C:\Users\higu\source\repos\Aula 99\Aula 99\bin\Debug\net8.0-windows\System.Data.SQLite.dll
+C:\Users\higu\source\repos\Aula 99\Aula 99\bin\Debug\net8.0-windows\runtimes\linux-x64\native\SQLite.Interop.dll
+C:\Users\higu\source\repos\Aula 99\Aula 99\bin\Debug\net8.0-windows\runtimes\osx-x64\native\SQLite.Interop.dll
+C:\Users\higu\source\repos\Aula 99\Aula 99\bin\Debug\net8.0-windows\runtimes\win-x64\native\SQLite.Interop.dll
+C:\Users\higu\source\repos\Aula 99\Aula 99\bin\Debug\net8.0-windows\runtimes\win-x86\native\SQLite.Interop.dll
+C:\Users\higu\source\repos\Aula 99\Aula 99\obj\Debug\net8.0-windows\Aula 99.csproj.AssemblyReference.cache
+C:\Users\higu\source\repos\Aula 99\Aula 99\obj\Debug\net8.0-windows\Aula_99.Form1.resources
+C:\Users\higu\source\repos\Aula 99\Aula 99\obj\Debug\net8.0-windows\Aula_99.F_login.resources
+C:\Users\higu\source\repos\Aula 99\Aula 99\obj\Debug\net8.0-windows\Aula 99.csproj.GenerateResource.cache
+C:\Users\higu\source\repos\Aula 99\Aula 99\obj\Debug\net8.0-windows\Aula 99.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\higu\source\repos\Aula 99\Aula 99\obj\Debug\net8.0-windows\Aula 99.AssemblyInfoInputs.cache
+C:\Users\higu\source\repos\Aula 99\Aula 99\obj\Debug\net8.0-windows\Aula 99.AssemblyInfo.cs
+C:\Users\higu\source\repos\Aula 99\Aula 99\obj\Debug\net8.0-windows\Aula 99.csproj.CoreCompileInputs.cache
+C:\Users\higu\source\repos\Aula 99\Aula 99\obj\Debug\net8.0-windows\Aula 99.csproj.Up2Date
+C:\Users\higu\source\repos\Aula 99\Aula 99\obj\Debug\net8.0-windows\Aula 99.dll
+C:\Users\higu\source\repos\Aula 99\Aula 99\obj\Debug\net8.0-windows\refint\Aula 99.dll
+C:\Users\higu\source\repos\Aula 99\Aula 99\obj\Debug\net8.0-windows\Aula 99.pdb
+C:\Users\higu\source\repos\Aula 99\Aula 99\obj\Debug\net8.0-windows\Aula 99.genruntimeconfig.cache
+C:\Users\higu\source\repos\Aula 99\Aula 99\obj\Debug\net8.0-windows\ref\Aula 99.dll
+C:\Users\higu\source\repos\Aula 99\Aula 99\obj\Debug\net8.0-windows\Aula_99.F_NovoUsuario.resources
+C:\Users\higu\source\repos\Aula 99\Aula 99\obj\Debug\net8.0-windows\Aula_99.F_GestaoUsuarios.resources

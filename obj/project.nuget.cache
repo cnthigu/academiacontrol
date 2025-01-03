@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "GmbSHF6H9/c=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\higu\\source\\repos\\Aula 99\\Aula 99\\Aula 99.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\higu\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.119\\stub.system.data.sqlite.core.netstandard.1.0.119.nupkg.sha512",
+    "C:\\Users\\higu\\.nuget\\packages\\system.data.sqlite.core\\1.0.119\\system.data.sqlite.core.1.0.119.nupkg.sha512"
+  ],
+  "logs": []
+}
