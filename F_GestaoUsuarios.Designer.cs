@@ -204,6 +204,7 @@
             btn_fechar.TabIndex = 3;
             btn_fechar.Text = "Fechar";
             btn_fechar.UseVisualStyleBackColor = true;
+            btn_fechar.Click += btn_fechar_Click;
             // 
             // btn_excluir
             // 
@@ -222,6 +223,7 @@
             btn_salvar.TabIndex = 1;
             btn_salvar.Text = "Salvar Alteração";
             btn_salvar.UseVisualStyleBackColor = true;
+            btn_salvar.Click += btn_salvar_Click;
             // 
             // btn_novo
             // 
@@ -231,6 +233,7 @@
             btn_novo.TabIndex = 0;
             btn_novo.Text = "Novo Usuário";
             btn_novo.UseVisualStyleBackColor = true;
+            btn_novo.Click += btn_novo_Click;
             // 
             // dgv_usuarios
             // 

@@ -24,3 +24,4 @@ C:\Users\higu\source\repos\Aula 99\Aula 99\obj\Debug\net8.0-windows\Aula 99.genr
 C:\Users\higu\source\repos\Aula 99\Aula 99\obj\Debug\net8.0-windows\ref\Aula 99.dll
 C:\Users\higu\source\repos\Aula 99\Aula 99\obj\Debug\net8.0-windows\Aula_99.F_NovoUsuario.resources
 C:\Users\higu\source\repos\Aula 99\Aula 99\obj\Debug\net8.0-windows\Aula_99.F_GestaoUsuarios.resources
+C:\Users\higu\source\repos\Aula 99\Aula 99\obj\Debug\net8.0-windows\Aula 99.sourcelink.json

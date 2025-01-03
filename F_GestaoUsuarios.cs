@@ -45,5 +45,31 @@ namespace Aula_99
 
             }
         }
+
+        private void btn_fechar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btn_novo_Click(object sender, EventArgs e)
+        {
+            F_NovoUsuario f_NovoUsuario = new F_NovoUsuario();
+            f_NovoUsuario.ShowDialog();
+            dgv_usuarios.DataSource = Banco.ObterUsuariosIdNome();
+        }
+
+        private void btn_salvar_Click(object sender, EventArgs e)
+        {
+            int linha = dgv_usuarios.SelectedRows[0].Index;
+            Usuario u = new Usuario();
+            u.id = Convert.ToInt32(tb_id.Text);
+            u.nome = tb_nome.Text;
+            u.username = tb_username.Text;
+            u.senha = tb_senha.Text;
+            u.nivel = Convert.ToInt32(Math.Round(n_nivel.Value,0));
+            Banco.AtualizarUsuario(u);
+            dgv_usuarios.DataSource = Banco.ObterUsuariosIdNome();
+            dgv_usuarios.CurrentCell = dgv_usuarios[0, linha];
+        }
     }
 }
