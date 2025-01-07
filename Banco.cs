@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SQLite;
 using System.Drawing;
+using System.Diagnostics;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Aula_99
 {
@@ -15,7 +18,7 @@ namespace Aula_99
 
         private static SQLiteConnection ConexaoBanco()
         {
-            conexao = new SQLiteConnection("Data Source=C:\\Users\\higu\\source\\repos\\Aula 99\\banco\\banco_academia.db");
+            conexao = new SQLiteConnection("Data Source="+Globais.caminhoBanco + Globais.nomeBanco);
             conexao.Open();
             return conexao;
         }
@@ -41,7 +44,7 @@ namespace Aula_99
 
         }
 
-        public static DataTable consulta(string sql)
+        public static DataTable dql(string sql) // dataquery language
         {
             SQLiteDataAdapter da = null;
             DataTable dt = new DataTable();
@@ -62,7 +65,36 @@ namespace Aula_99
             }
         }
 
-        //// Funções do Form GestãodeUusuario
+        public static void dml(string q, string msgOK = null, string msgERRO = null)
+        {
+            SQLiteDataAdapter da = null;
+            DataTable dt = new DataTable();
+            try
+            {
+                var vcon = ConexaoBanco();
+                var cmd = vcon.CreateCommand();
+                cmd.CommandText = q;
+                da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+                cmd.ExecuteNonQuery();
+                vcon.Close();
+                if (msgOK != null)
+                {
+
+                    MessageBox.Show(msgOK);
+
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                if (msgERRO != null)
+                {
+                    MessageBox.Show(msgERRO+"\n" + ex.Message);
+                }
+                throw ex;
+            }
+        }
 
         public static DataTable ObterUsuariosIdNome()
         {
@@ -143,7 +175,6 @@ namespace Aula_99
                     cmd.Parameters.AddWithValue("@senha", u.senha);
                     cmd.Parameters.AddWithValue("@status", u.status);
                     cmd.Parameters.AddWithValue("@nivel", u.nivel);
-
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Usuário inserido com sucesso!");
                     vcon.Close();
@@ -154,9 +185,6 @@ namespace Aula_99
                 MessageBox.Show("Erro ao inserir usuário");
             }
         }
-
-        /// 
-
         public static bool existeusername(Usuario u)
         {
             bool res = false;
@@ -181,6 +209,26 @@ namespace Aula_99
             }
             return res;
         }
+
+        public static void DeletarUsuario(string id)
+        {
+            SQLiteDataAdapter da = null;
+            DataTable dt = new DataTable();
+            try
+            {
+                var vcon = ConexaoBanco();
+                var cmd = vcon.CreateCommand();
+                cmd.CommandText = "DELETE FROM tb_usuarios WHERE N_IDUSUARIO=" + id;
+                da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+                cmd.ExecuteNonQuery();
+                vcon.Close();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }        
     }
 
 }

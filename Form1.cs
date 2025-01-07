@@ -10,6 +10,26 @@ namespace Aula_99
 
         }
 
+        private void abreform(int nivel, Form f)
+        {
+            if (Globais.logado)
+            {
+                if (Globais.nivel >= nivel)
+                {
+                    f.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Nível de acesso não permitido!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("É Necessário estar logado!");
+            }
+        }
+
+
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -56,73 +76,42 @@ namespace Aula_99
 
         private void bancoDeDadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (Globais.logado)
-            {
-                if (Globais.nivel >= 3)
-                {
-
-                }
-                else
-                {
-                    MessageBox.Show("Nível de acesso não permitido!");
-                }
-            }
-            else
-            {
-                MessageBox.Show("É Necessário estar logado!");
-            }
+            //abreform
         }
 
         private void novoUsuárioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (Globais.logado)
-            {
-                if (Globais.nivel >= 2)
-                {
-                    F_NovoUsuario f_NovoUsuario = new F_NovoUsuario();
-                    f_NovoUsuario.ShowDialog();
-                }
-                else
-                {
-                    MessageBox.Show("Nível de acesso não permitido!");
-                }
-            }
-            else
-            {
-                MessageBox.Show("É Necessário estar logado!");
-            }
+            F_NovoUsuario f_NovoUsuario = new F_NovoUsuario();
+            abreform(2, f_NovoUsuario);
         }
 
         private void gestãoDeUsuáriosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (Globais.logado)
-            {
-                if (Globais.nivel >= 2)
-                {
-                    F_GestaoUsuarios f_GestaoUsuarios = new F_GestaoUsuarios();
-                    f_GestaoUsuarios.ShowDialog();
-                }
-                else
-                {
-                    MessageBox.Show("Nível de acesso não permitido!");
-                }
-            }
-            else
-            {
-                MessageBox.Show("É Necessário estar logado!");
-            }
+            F_GestaoUsuarios f_GestaoUsuarios = new F_GestaoUsuarios();
+            abreform(2, f_GestaoUsuarios);
         }
 
         private void novoAlunoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (Globais.logado)
-            {
-                //
-            }
-            else
-            {
-                MessageBox.Show("É Necessário estar logado!");
-            }
+            //abreform
+        }
+
+        private void horariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            F_Horarios f_Horarios = new F_Horarios();
+            abreform(2, f_Horarios);
+        }
+
+        private void professoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            F_Professores f_professores = new F_Professores();
+            abreform(2, f_professores);
+        }
+
+        private void turmasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            F_GestaoTurma f_GestaoTurma = new F_GestaoTurma();
+            abreform(2, f_GestaoTurma);
         }
     }
 }

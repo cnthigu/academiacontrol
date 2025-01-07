@@ -44,7 +44,7 @@ namespace Aula_99
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+
             Usuario usuario = new Usuario();
             usuario.nome = tb_nome.Text;
             usuario.username = tb_username.Text;

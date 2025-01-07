@@ -15,6 +15,7 @@ namespace Aula_99
         public string senha;
         public string status;
         public Int32 nivel;
+        public string hwid;
 
     }
 }

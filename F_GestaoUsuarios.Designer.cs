@@ -214,6 +214,7 @@
             btn_excluir.TabIndex = 2;
             btn_excluir.Text = "Excluir ";
             btn_excluir.UseVisualStyleBackColor = true;
+            btn_excluir.Click += btn_excluir_Click;
             // 
             // btn_salvar
             // 
@@ -245,6 +246,7 @@
             dgv_usuarios.ReadOnly = true;
             dgv_usuarios.Size = new Size(413, 204);
             dgv_usuarios.TabIndex = 31;
+            dgv_usuarios.CellContentClick += dgv_usuarios_CellContentClick;
             dgv_usuarios.SelectionChanged += dgv_usuarios_SelectionChanged;
             // 
             // F_GestaoUsuarios

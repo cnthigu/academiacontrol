@@ -84,9 +84,9 @@
             // 
             // tb_cancelar
             // 
-            tb_cancelar.Location = new Point(116, 186);
+            tb_cancelar.Location = new Point(130, 186);
             tb_cancelar.Name = "tb_cancelar";
-            tb_cancelar.Size = new Size(100, 23);
+            tb_cancelar.Size = new Size(72, 23);
             tb_cancelar.TabIndex = 5;
             tb_cancelar.Text = "Cancelar";
             tb_cancelar.UseVisualStyleBackColor = true;

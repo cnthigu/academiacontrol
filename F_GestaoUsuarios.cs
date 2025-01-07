@@ -66,10 +66,27 @@ namespace Aula_99
             u.nome = tb_nome.Text;
             u.username = tb_username.Text;
             u.senha = tb_senha.Text;
-            u.nivel = Convert.ToInt32(Math.Round(n_nivel.Value,0));
+            u.nivel = Convert.ToInt32(Math.Round(n_nivel.Value, 0));
             Banco.AtualizarUsuario(u);
             dgv_usuarios.DataSource = Banco.ObterUsuariosIdNome();
             dgv_usuarios.CurrentCell = dgv_usuarios[0, linha];
+        }
+
+        private void btn_excluir_Click(object sender, EventArgs e)
+        {
+            DialogResult res = MessageBox.Show("Confirma, exclução? ", "Excluir?", MessageBoxButtons.YesNo);
+
+            if (res == DialogResult.Yes)
+            {
+                Banco.DeletarUsuario(tb_id.Text);
+                dgv_usuarios.Rows.Remove(dgv_usuarios.CurrentRow);
+            }
+
+        }
+
+        private void dgv_usuarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
