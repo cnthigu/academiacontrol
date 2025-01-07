@@ -102,6 +102,7 @@
             btn_imprimir.TabIndex = 11;
             btn_imprimir.Text = "Imprimir Turma";
             btn_imprimir.UseVisualStyleBackColor = true;
+            btn_imprimir.Click += btn_imprimir_Click;
             // 
             // btn_fechar
             // 

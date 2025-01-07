@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using iTextSharp;
+using iTextSharp.text;
 
 namespace Aula_99
 {
@@ -154,7 +156,8 @@ namespace Aula_99
 
         private void btn_salvarEdicao_Click(object sender, EventArgs e)
         {
-            if (modo != 0) {
+            if (modo != 0)
+            {
                 string queryTurma = "";
                 if (modo == 1)
                 {
@@ -180,7 +183,7 @@ namespace Aula_99
                     queryTurma = String.Format(@"
                         INSERT INTO tb_turmas
                         (T_DSCTURMA,N_IDPROFESSOR,N_IDHORARIO,T_STATUS)
-                            VALUES({0},{1},{2},{3})", tb_dscturma.Text, cb_professor.SelectedValue,cb_horarios.SelectedValue,cb_maxAlunos,cb_status.SelectedValue);
+                            VALUES({0},{1},{2},{3})", tb_dscturma.Text, cb_professor.SelectedValue, cb_horarios.SelectedValue, cb_maxAlunos, cb_status.SelectedValue);
                 }
                 int linha = dgv_turmas.SelectedRows[0].Index;
                 queryTurma = String.Format(@"
@@ -225,7 +228,12 @@ namespace Aula_99
 
         private void btn_fechar_Click(object sender, EventArgs e)
         {
-            Close();    
+            Close();
+        }
+
+        private void btn_imprimir_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }   
